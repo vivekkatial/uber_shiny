@@ -1,0 +1,9 @@
+{
+    "path" : "~/Documents/uber_shiny/data",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
