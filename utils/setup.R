@@ -8,3 +8,5 @@
 # Key to OpenExhcange Rates
 key <- read_file(file = ".credentials/openexchangerates") %>% 
   str_replace("\n", "")
+
+

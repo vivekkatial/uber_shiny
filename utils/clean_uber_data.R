@@ -26,7 +26,6 @@ d_clean <- d_uber %>%
     begin_trip_date = as.Date(begin_trip_time),
     dropoff_date = as.Date(dropoff_time)
     )
-
 # Code to find and write out currency rates -------------------------------
 
 d_currency_rates <- read_csv("data/currency_rate.csv")

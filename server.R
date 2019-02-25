@@ -100,7 +100,42 @@ server <- function(input, output) {
   
 
 # Plots -------------------------------------------------------------------
+  
 
-  # Select input
-  renderUI()
+  # Reactive to create map data ---------------------------------------------
+  d_map <- reactive({
+    d_clean %>% 
+      filter(city == input$city) %>% 
+      filter(year == as.numeric(input$year)) %>% 
+      remove_missing()
+  })
+  
+
+  # Create Map Plot ---------------------------------------------------------
+  output$leaflet_map <- renderLeaflet({
+      d_map()
+      leaflet() %>% 
+      addProviderTiles(providers$CartoDB.Positron) %>% 
+      addCircleMarkers(
+        lat = d_map()$begin_trip_lat, 
+        lng = d_map()$begin_trip_lng,
+        radius = 2,
+        color = "blue",
+        popup = paste("<b>Start Address:</b>\n", d_map()$begin_trip_address)
+      ) %>% 
+      addCircleMarkers(
+        lat = d_map()$dropoff_lat,
+        lng = d_map()$dropoff_lng,
+        radius = 2,
+        color = "red",
+        popup = paste("<b>Drop off Address:</b>\n", d_map()$dropoff_address)
+      ) %>% 
+      addPolylines(
+        lat = c(d_map()$begin_trip_lat, d_map()$dropoff_lat),
+        lng = c(d_map()$begin_trip_lng, d_map()$dropoff_lng),
+        weight = 0.5,
+        color = "black"
+      )
+  })
+
 }

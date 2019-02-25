@@ -1,181 +1,62 @@
-git add -A
-]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git status
+git status
 On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-	[32mnew file:   .Rhistory[m
-	[32mnew file:   .Rproj.user/503B2E7/console06/25862087[m
-	[32mnew file:   .Rproj.user/503B2E7/console06/25862087.env[m
-	[32mnew file:   .Rproj.user/503B2E7/console06/INDEX001[m
-	[32mnew file:   .Rproj.user/503B2E7/pcs/files-pane.pper[m
-	[32mnew file:   .Rproj.user/503B2E7/pcs/source-pane.pper[m
-	[32mnew file:   .Rproj.user/503B2E7/pcs/windowlayoutstate.pper[m
-	[32mnew file:   .Rproj.user/503B2E7/pcs/workbench-pane.pper[m
-	[32mnew file:   .Rproj.user/503B2E7/persistent-state[m
-	[32mnew file:   .Rproj.user/503B2E7/rmd-outputs[m
-	[32mnew file:   .Rproj.user/503B2E7/saved_source_markers[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/277A7A0[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/30571745[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/6EC3A1A4[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/91242F5B[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/9B5DD8B0[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/9E08BF6C[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/B39BAA2D[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/BAAEC422[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/BCB896D8[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/C81F59AD[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/CAF2540C[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/CD031D1[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/D61FA861[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/D8191731[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/DF012EF2[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/FDB69679[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/prop/INDEX[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/16BD4D42-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/190281AA[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/190281AA-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/1B698737-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/3C20EE22-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/4DAE5FDD[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/4DAE5FDD-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/6A051194[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/6A051194-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/6F424DAD-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/98C97E9D-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/9E55888D[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/9E55888D-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/A5364FEB[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/A5364FEB-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/A5F1E1EA-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/BC14FE32-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/CEF52C97[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/CEF52C97-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/D83663F8-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/F73454E2-contents[m
-	[32mnew file:   .Rproj.user/503B2E7/sources/s-52B217FF/lock_file[m
-	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
-	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
-	[32mnew file:   .gitignore[m
-	[32mnew file:   global.R[m
-	[32mnew file:   server.R[m
-	[32mnew file:   uber_shiny.Rproj[m
-	[32mnew file:   ui.R[m
-	[32mnew file:   utils/clean_uber_data.R[m
-	[32mnew file:   utils/setup.R[m
-	[32mnew file:   www/css/base.css[m
-	[32mnew file:   www/css/font-awesome/css/font-awesome.css[m
-	[32mnew file:   www/css/font-awesome/css/font-awesome.min.css[m
-	[32mnew file:   www/css/font-awesome/fonts/FontAwesome.otf[m
-	[32mnew file:   www/css/font-awesome/fonts/fontawesome-webfont.eot[m
-	[32mnew file:   www/css/font-awesome/fonts/fontawesome-webfont.svg[m
-	[32mnew file:   www/css/font-awesome/fonts/fontawesome-webfont.ttf[m
-	[32mnew file:   www/css/font-awesome/fonts/fontawesome-webfont.woff[m
-	[32mnew file:   www/css/font-awesome/fonts/fontawesome-webfont.woff2[m
-	[32mnew file:   www/css/fonts.css[m
-	[32mnew file:   www/css/main.css[m
-	[32mnew file:   www/css/micons/fonts/icomoon.eot[m
-	[32mnew file:   www/css/micons/fonts/icomoon.svg[m
-	[32mnew file:   www/css/micons/fonts/icomoon.ttf[m
-	[32mnew file:   www/css/micons/fonts/icomoon.woff[m
-	[32mnew file:   www/css/micons/micons.css[m
-	[32mnew file:   www/css/vendor.css[m
-	[32mnew file:   www/favicon.ico[m
-	[32mnew file:   www/fonts/lora/lora-bold-webfont.ttf[m
-	[32mnew file:   www/fonts/lora/lora-bold-webfont.woff[m
-	[32mnew file:   www/fonts/lora/lora-bold-webfont.woff2[m
-	[32mnew file:   www/fonts/lora/lora-bolditalic-webfont.woff[m
-	[32mnew file:   www/fonts/lora/lora-bolditalic-webfont.woff2[m
-	[32mnew file:   www/fonts/lora/lora-italic-webfont.ttf[m
-	[32mnew file:   www/fonts/lora/lora-italic-webfont.woff[m
-	[32mnew file:   www/fonts/lora/lora-italic-webfont.woff2[m
-	[32mnew file:   www/fonts/lora/lora-regular-webfont.woff[m
-	[32mnew file:   www/fonts/lora/lora-regular-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-black-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-black-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-bold-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-bold-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-extrabold-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-extrabold-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-extralight-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-extralight-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-light-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-light-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-medium-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-medium-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-regular-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-regular-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-semibold-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-semibold-webfont.woff2[m
-	[32mnew file:   www/fonts/montserrat/montserrat-thin-webfont.woff[m
-	[32mnew file:   www/fonts/montserrat/montserrat-thin-webfont.woff2[m
-	[32mnew file:   www/images/avatars/user-01.jpg[m
-	[32mnew file:   www/images/avatars/user-02.jpg[m
-	[32mnew file:   www/images/avatars/user-03.jpg[m
-	[32mnew file:   www/images/avatars/user-04.jpg[m
-	[32mnew file:   www/images/avatars/user-05.jpg[m
-	[32mnew file:   www/images/clients/apple.png[m
-	[32mnew file:   www/images/clients/atom.png[m
-	[32mnew file:   www/images/clients/blackberry.png[m
-	[32mnew file:   www/images/clients/dropbox.png[m
-	[32mnew file:   www/images/clients/envato.png[m
-	[32mnew file:   www/images/clients/firefox.png[m
-	[32mnew file:   www/images/clients/joomla.png[m
-	[32mnew file:   www/images/clients/magento.png[m
-	[32mnew file:   www/images/clients/mozilla.png[m
-	[32mnew file:   www/images/clients/redhat.png[m
-	[32mnew file:   www/images/clients/ubuntu.png[m
-	[32mnew file:   www/images/clients/wordpress.png[m
-	[32mnew file:   www/images/contact-bg.jpg[m
-	[32mnew file:   www/images/email-icon.png[m
-	[32mnew file:   www/images/hero-bg.jpg[m
-	[32mnew file:   www/images/left-arrow.png[m
-	[32mnew file:   www/images/logo-footer.png[m
-	[32mnew file:   www/images/logo.png[m
-	[32mnew file:   www/images/photoswipe/default-skin.png[m
-	[32mnew file:   www/images/photoswipe/default-skin.svg[m
-	[32mnew file:   www/images/photoswipe/preloader.gif[m
-	[32mnew file:   www/images/portfolio/gallery/g-beetle.jpg[m
-	[32mnew file:   www/images/portfolio/gallery/g-grow-green.jpg[m
-	[32mnew file:   www/images/portfolio/gallery/g-guitarist.jpg[m
-	[32mnew file:   www/images/portfolio/gallery/g-palmeira.jpg[m
-	[32mnew file:   www/images/portfolio/gallery/g-shutterbug.jpg[m
-	[32mnew file:   www/images/portfolio/gallery/g-woodcraft.jpg[m
-	[32mnew file:   www/images/portfolio/grow-green.jpg[m
-	[32mnew file:   www/images/portfolio/grow-green@2x.jpg[m
-	[32mnew file:   www/images/portfolio/guitarist.jpg[m
-	[32mnew file:   www/images/portfolio/guitarist@2x.jpg[m
-	[32mnew file:   www/images/portfolio/lady-shutterbug.jpg[m
-	[32mnew file:   www/images/portfolio/lady-shutterbug@2x.jpg[m
-	[32mnew file:   www/images/portfolio/palmeira.jpg[m
-	[32mnew file:   www/images/portfolio/palmeira@2x.jpg[m
-	[32mnew file:   www/images/portfolio/the-beetle.jpg[m
-	[32mnew file:   www/images/portfolio/the-beetle@2x.jpg[m
-	[32mnew file:   www/images/portfolio/woodcraft.jpg[m
-	[32mnew file:   www/images/portfolio/woodcraft@2x.jpg[m
-	[32mnew file:   www/images/right-arrow.png[m
-	[32mnew file:   www/images/sample-image.jpg[m
-	[32mnew file:   www/images/wheel-1000.jpg[m
-	[32mnew file:   www/images/wheel-2000.jpg[m
-	[32mnew file:   www/images/wheel-500.jpg[m
-	[32mnew file:   www/inc/sendEmail.php[m
-	[32mnew file:   www/index.html[m
-	[32mnew file:   www/js/jquery-3.2.1.min.js[m
-	[32mnew file:   www/js/main.js[m
-	[32mnew file:   www/js/modernizr.js[m
-	[32mnew file:   www/js/pace.min.js[m
-	[32mnew file:   www/js/plugins.js[m
-	[32mnew file:   www/old_index.html[m
-	[32mnew file:   www/readme.txt[m
-	[32mnew file:   www/styles.html[m
+Your branch is up-to-date with 'origin/master'.
 
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
+  (use "git add/rm <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
+	[31mmodified:   .Rhistory[m
 	[31mmodified:   .Rproj.user/503B2E7/console06/25862087[m
+	[31mmodified:   .Rproj.user/503B2E7/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/503B2E7/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/503B2E7/pcs/source-pane.pper[m
+	[31mmodified:   .Rproj.user/503B2E7/pcs/windowlayoutstate.pper[m
+	[31mmodified:   .Rproj.user/503B2E7/pcs/workbench-pane.pper[m
+	[31mmodified:   .Rproj.user/503B2E7/persistent-state[m
+	[31mmodified:   .Rproj.user/503B2E7/saved_source_markers[m
+	[31mmodified:   .Rproj.user/503B2E7/sources/prop/6EC3A1A4[m
+	[31mmodified:   .Rproj.user/503B2E7/sources/prop/91242F5B[m
+	[31mmodified:   .Rproj.user/503B2E7/sources/prop/9B5DD8B0[m
+	[31mmodified:   .Rproj.user/503B2E7/sources/prop/BCB896D8[m
+	[31mmodified:   .Rproj.user/503B2E7/sources/prop/CAF2540C[m
+	[31mmodified:   .Rproj.user/503B2E7/sources/prop/FDB69679[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/16BD4D42-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/190281AA[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/190281AA-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/1B698737-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/3C20EE22-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/4DAE5FDD[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/4DAE5FDD-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/6A051194[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/6A051194-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/6F424DAD-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/98C97E9D-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/9E55888D[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/9E55888D-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/A5364FEB[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/A5364FEB-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/A5F1E1EA-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/BC14FE32-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/CEF52C97[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/CEF52C97-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/D83663F8-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/F73454E2-contents[m
+	[31mdeleted:    .Rproj.user/503B2E7/sources/s-52B217FF/lock_file[m
+	[31mmodified:   .gitignore[m
+	[31mmodified:   global.R[m
+	[31mmodified:   server.R[m
+	[31mmodified:   ui.R[m
+	[31mmodified:   utils/clean_uber_data.R[m
+	[31mmodified:   utils/setup.R[m
+	[31mmodified:   www/index.html[m
 
-]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git commit -a -m "Initial commit"
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git add global.R 
+]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git add server.R 
+]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git add ui.R 
+]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git utils/clean_uber_data.R 
+git: 'utils/clean_uber_data.R' is not a git command. See 'git --help'.
+]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git add set[K[K[Kutils/setup.R 
+]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git add www/index.html 
+]0;~/Documents/uber_shinyViveks-MacBook-Pro:uber_shiny vivekkatial$ git commit -a -m "Added mapa[Kping funci[K[K[K[K[K[K[K[K[K[Ks plot for uber data"

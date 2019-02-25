@@ -1,3 +1,4 @@
 .credentials/*
 *.csv
 rsconnect/*
+.Rproj.user

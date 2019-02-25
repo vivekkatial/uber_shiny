@@ -10,8 +10,10 @@
 library(shiny)
 library(tidyverse)
 library(janitor)
+library(highcharter)
 library(lubridate)
-library(alphavantager)
+library(leaflet)
+library(shinycssloaders)
 
 #  Clean Scripts ----------------------------------------------------------
 source("utils/clean_uber_data.R")

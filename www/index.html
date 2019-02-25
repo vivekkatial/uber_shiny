@@ -38,6 +38,8 @@
     <!-- shiny stuff
         ================================================== -->
     {{ headContent() }}
+    
+    <style>.selectize-dropdown {z-index: 10000}</style>
 </head>
 
 <body id="top">
@@ -56,25 +58,20 @@
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll"  href="#about" title="about">Introduction</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Dashboard</a></li>
                 </ul>
     
                 <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
     
                 <ul class="header-nav__social">
                     <li>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="https://facebook.com/vivek.katial"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="https://twitter.com/vivekkatial"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="https://www.instagram.com/vivekkatial/"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul>
 
@@ -209,7 +206,27 @@
 
     <!-- services ================================================== -->
     <section id='services' class="s-services">
-                  <pre id="select_year" class="shiny-select-output"></pre>
+      
+        <div class="row section-header has-bottom-sep aos-init aos-animate" data-aos="fade-up">
+            <div class="col-full">
+                <h2 class="subhead">Let's map some of my Uber Trips</h2>
+                <h4 class="display-2">Select a year and a city from the selectors below</h4>
+            </div>
+        </div>
+      
+      <div class="col-full"> 
+      {{ leaflet_map }}
+      </div>
+      
+      <div class="row services-list block-1-2 block-tab-full">
+        <div class="col-block service-item aos-init aos-animate" data-aos="fade-up">
+            {{ city_selector }}
+        </div>
+        <div class="col-block service-item aos-init aos-animate" data-aos="fade-up">
+            {{ year_selector }}
+        </div>
+      </div>
+
     </section> 
     <!-- end s-services -->
 
@@ -275,7 +292,6 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
