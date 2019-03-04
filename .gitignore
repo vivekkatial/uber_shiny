@@ -1,4 +1,9 @@
 .credentials/*
+*.rds
+*.RDs
 *.csv
 rsconnect/*
+.Rproj.user/*
 .Rproj.user
+Rproj.user/*
+.httr-oauth

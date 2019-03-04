@@ -39,3 +39,4 @@ d_currency_rates <- read_csv("data/currency_rate.csv")
 #   ) %>% 
 #   mutate(rates_date = Sys.Date()) %>% 
 #   write_csv("data/currency_rate.csv")
+
