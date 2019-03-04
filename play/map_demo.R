@@ -13,11 +13,6 @@ library(leaflet)
 library(tidyverse)
 library(xts)
 
-
-# Creds -------------------------------------------------------------------
-
-map_key <- read_file(".credentials/googlemaps") %>% str_replace_all("\n", "")
-
 # Import RDS file containing route information
 d_routes <- readRDS("data/uber_routes.rds") %>% 
   select(city, request_time, start_coord, end_coord, route) %>% 
