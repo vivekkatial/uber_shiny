@@ -15,19 +15,38 @@ ui = shiny::htmlTemplate(
     inline = T
   ),
   
-  # Expensive Trip
-  expensive_trip = textOutput(
-    "most_expensive_trip_text",
+  # Number of hours
+  num_hours_text = textOutput(
+    "num_hours",
     inline = T
-    ),
+  ),
   
+  # Longest Trip
   longest_trip_time = textOutput(
     "longest_trip_time_text",
     inline = T
   ),
   
+  # Number of Kms
+  num_distance_text = textOutput(
+    "num_distance",
+    inline = T
+  ),
+  
   longest_trip_distance = textOutput(
     "longest_trip_distance_text",
+    inline = T
+  ),
+  
+  # Expensive Trip
+  
+  num_dollars_spent = textOutput(
+    "num_distance",
+    inline = T
+  ),
+  
+  expensive_trip = textOutput(
+    "most_expensive_trip_text",
     inline = T
   ),
   

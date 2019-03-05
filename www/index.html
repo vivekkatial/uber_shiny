@@ -149,14 +149,14 @@
                 
             <div class="col-block stats__col">
                 <div class="stats__count">
-                  <pre id="num_hours" class="shiny-text-output"></pre>
+                  {{num_hours_text}}
                 </div>
                 <h5>Hours Travelled</h5>
                 <h6>Longest trip (time) {{longest_trip_time}} minutes</h6>
             </div>
             <div class="col-block stats__col">
                 <div class="stats__count">
-                  <pre id="num_distance" class="shiny-text-output"></pre>
+                  {{num_distance_text}}
                 </div>
                 <h5>Kilometres Travelled</h5>
                 <h6>Longest trip (distance) {{longest_trip_distance}} kms</h6>
@@ -191,7 +191,7 @@
             </div>
         </div>
 
-      <div class="col-full"> 
+      <div class="intro-wrap"> 
       {{ leaflet_map }}
       </div>
       
