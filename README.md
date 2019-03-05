@@ -1,4 +1,4 @@
-# README
+# Shiny App to Explore Uber Data
 
 This is a shiny app I have developed which showcases how to make Shiny apps look nice using `HTMLTemplates`. The app itself explores my uber data.
 
