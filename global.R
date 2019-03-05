@@ -14,6 +14,7 @@ library(highcharter)
 library(lubridate)
 library(leaflet)
 library(shinycssloaders)
+library(sp)
 
 #  Clean Scripts ----------------------------------------------------------
 source("utils/clean_uber_data.R")

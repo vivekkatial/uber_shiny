@@ -38,3 +38,8 @@ d_routes <- readRDS("data/uber_routes.rds") %>%
   mutate(trip = paste("Trip", 1:n()))
 
 
+# d_clean %>% 
+#   count(year, month) %>% 
+#   filter(year > 2016) %>% 
+#   hchart(type = 'line', hcaes(y = n, x = month, group = year))
+# 
