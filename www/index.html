@@ -58,10 +58,9 @@
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll"  href="#about" title="about">Introduction</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Dashboard</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Trip Maps</a></li>
                 </ul>
-    
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+
     
                 <ul class="header-nav__social">
                     <li>
@@ -89,7 +88,7 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpeg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -98,12 +97,13 @@
 
             <div class="row home-content__main">
 
-                <h3>Welcome to my HTML Template Shiny App</h3>
+                <h3>Explore my Uber Data</h3>
 
                 <h1>
                     This shiny app<br>
                     demonstrates how one can build a beautiful UI<br>
                     and incorporate R Shiny server logic <br>
+                    whilst exploring my Uber data
                 </h1>
                 
 
@@ -126,25 +126,6 @@
         </div> <!-- end home-content -->
 
 
-        <ul class="home-social">
-            <li>
-                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-            </li>
-        </ul> 
-        <!-- end home-social -->
-
     </section> <!-- end s-home -->
 
 
@@ -155,43 +136,37 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--dark">Hello There</h3>
-                <h1 class="display-1 display-1--light">Check out my Uber data</h1>
+                <h1 class="display-1 display-1--light">
+                  Check out my data from {{number_of_trips}} uber trips
+                  </h1>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row about-desc aos-init aos-animate" data-aos="fade-up">
-            <div class="col-full">
-                  <pre id="data_message" class="shiny-text-output"></pre>
-            </div>
-        </div> 
         <!-- end about-desc -->
 
         <!--- NUMBERS BY INTEGRATING SHINY OUTPUT -->
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+        <div class="row about-stats stats block-1-3 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
-            <div class="col-block stats__col ">
-                <div class="stats__count">
-                  <pre id="num_trips" class="shiny-text-output"></pre>
-                </div>
-                <h5>Total Trips</h5>
-            </div>
             <div class="col-block stats__col">
                 <div class="stats__count">
                   <pre id="num_hours" class="shiny-text-output"></pre>
                 </div>
                 <h5>Hours Travelled</h5>
+                <h6>Longest trip (time) {{longest_trip_time}} minutes</h6>
             </div>
             <div class="col-block stats__col">
                 <div class="stats__count">
                   <pre id="num_distance" class="shiny-text-output"></pre>
                 </div>
                 <h5>Kilometres Travelled</h5>
+                <h6>Longest trip (distance) {{longest_trip_distance}} kms</h6>
             </div>
             <div class="col-block stats__col">
                 <div class="stats__count">
                   <pre id="num_dollars_spent" class="shiny-text-output"></pre>
                 </div>
                 <h5>US Dollars Spent</h5> 
+                <h6>Most expensive trip $ {{expensive_trip}} </h6>
             </div> 
 
         </div> 
@@ -211,9 +186,11 @@
             <div class="col-full">
                 <h2 class="subhead">Let's map some of my Uber Trips</h2>
                 <h4 class="display-2">Select a year and a city from the selectors below</h4>
+    
+
             </div>
         </div>
-      
+
       <div class="col-full"> 
       {{ leaflet_map }}
       </div>
@@ -223,56 +200,16 @@
             {{ city_selector }}
         </div>
         <div class="col-block service-item aos-init aos-animate" data-aos="fade-up">
-            {{ year_selector }}
+            {{ time_selector }}
         </div>
       </div>
 
     </section> 
     <!-- end s-services -->
 
-    <!-- footer
-    ================================================== -->
 
 
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
 
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div> 
-    <!-- end photoSwipe background -->
 
 
     <!-- preloader

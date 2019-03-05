@@ -30,13 +30,11 @@ d_clean <- d_uber %>%
 
 d_currency_rates <- read_csv("data/currency_rate.csv")
 
-# d_clean %>% 
-#   select(fare_currency) %>% 
-#   distinct() %>% 
-#   remove_empty("rows") %>% 
-#   mutate(
-#     rate = map_dbl(fare_currency, function(x) lucr::currency_convert(1, from = x, to = "USD", key = key))
-#   ) %>% 
-#   mutate(rates_date = Sys.Date()) %>% 
-#   write_csv("data/currency_rate.csv")
+
+# Make Route Data Available -----------------------------------------------
+
+d_routes <- readRDS("data/uber_routes.rds") %>% 
+  select(city, request_time, start_coord, end_coord, route) %>% 
+  mutate(trip = paste("Trip", 1:n()))
+
 
