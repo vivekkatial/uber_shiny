@@ -67,8 +67,11 @@ ui = shiny::htmlTemplate(
     min(d_routes$request_time) %>% as.Date(), 
     max(d_routes$request_time) %>% as.Date(),
     value = max(d_routes$request_time) %>% as.Date(),
-    step = 14,
-    animate = TRUE
+    step = 30,
+    animate = animationOptions(
+      playButton = HTML("<img src='images/icons/play-button.png' height='42' width='42'>"), 
+      pauseButton = HTML("<img src='images/icons/pause-button.png' height='42' width='42'>")
+      )
   ),
   
   # Leaflet map

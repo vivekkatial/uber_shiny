@@ -35,11 +35,8 @@ d_currency_rates <- read_csv("data/currency_rate.csv")
 
 d_routes <- readRDS("data/uber_routes.rds") %>% 
   select(city, request_time, start_coord, end_coord, route) %>% 
-  mutate(trip = paste("Trip", 1:n()))
+  mutate(trip = paste("Trip", 1:n())) %>% 
+  filter(request_time > as_datetime("2016-01-01"))
 
 
-# d_clean %>% 
-#   count(year, month) %>% 
-#   filter(year > 2016) %>% 
-#   hchart(type = 'line', hcaes(y = n, x = month, group = year))
-# 
+

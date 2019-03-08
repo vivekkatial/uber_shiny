@@ -99,7 +99,6 @@ server <- function(input, output) {
 
   
   points_full <- reactive({
-    #browser()
     # Clean trip data
     d_show <- d_routes %>% 
       filter(city == input$city)
@@ -173,7 +172,7 @@ server <- function(input, output) {
     # create the map
     leafletProxy("map", data = points()) %>% 
       clearShapes() %>% 
-      addPolylines(weight = 1, color = "orange") %>% 
+      addPolylines(weight = 1, color = "violet") %>% 
       fitBounds(
         points_full()@bbox[1], 
         points_full()@bbox[2], 
