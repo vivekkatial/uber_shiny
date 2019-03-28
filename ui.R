@@ -57,24 +57,27 @@ ui = shiny::htmlTemplate(
     choices = d_clean$city %>% 
       unique(),
     selected = "Auckland"
-    ),
+  ),
   
   
   # Selector for Time
-  time_selector = sliderInput(
-    "time", 
-    "Date",
-    min(d_routes$request_time) %>% as.Date(), 
-    max(d_routes$request_time) %>% as.Date(),
-    value = max(d_routes$request_time) %>% as.Date(),
-    step = 30,
-    animate = animationOptions(
-      playButton = HTML("<img src='images/icons/play-button.png' height='42' width='42'>"), 
-      pauseButton = HTML("<img src='images/icons/pause-button.png' height='42' width='42'>")
+  time_selector = material_card(
+    title = "",
+    sliderInput(
+      "time", 
+      "Date",
+      min(d_routes$request_time) %>% as.Date(), 
+      max(d_routes$request_time) %>% as.Date(),
+      value = max(d_routes$request_time) %>% as.Date(),
+      step = 30,
+      animate = animationOptions(
+        playButton = HTML("<img src='images/icons/play-button.png' height='20' width='20'>"), 
+        pauseButton = HTML("<img src='images/icons/pause-button.png' height='20' width='20'>")
       )
+    )
   ),
   
   # Leaflet map
   leaflet_map = leafletOutput(outputId = "map") %>% 
     withSpinner(color="#0dc5c1")
-  )
+)
