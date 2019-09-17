@@ -16,10 +16,6 @@ The theme used in this app is [Glint](https://colorlib.com/wp/product/glint/).
 
 The development time, including concept design, API research, data preparation, cleaning and application development took less than 20 hours.
 
-## Shiny app
-
- The app was developed with best Shiny practices in mind, e.g. the use of Shiny modules. In total about 1,100 lines of code were written for this app in less than 80 hours. This time included app ideation and all required research of data sources, data preparation and its operationalisation, app development, design and how to best present the information.
-
 ## Application Deployment
 
 The app is deployed through RStudio's webservice [shinyapps.io](https://shinyapps.io/). Additionally, the app is published on [RStudio Cloud](https://rstudio.cloud/project/258634) which provides a complete development environment of the project.
