@@ -1,4 +1,7 @@
-![uber logo](http://mediad.publicbroadcasting.net/p/sdpb/files/styles/medium/public/201607/uber.jpg)
+<a href="">
+    <img src="http://mediad.publicbroadcasting.net/p/sdpb/files/styles/medium/public/201607/uber.jpg" alt="Uber Logo" title="Uber" align="right" height="60" />
+</a>
+
 # Shiny App to Explore Uber Data (ubeRideR)
 
 This project is an RShiny Web Application that I developed for the RStudio Shiny Contest. The application itself explores my Uber Data. This data was requested from UBER and you can request your data from Uber on the following [link](https://help.uber.com/riders/article/download-your-data?nodeId=2c86900d-8408-4bac-b92a-956d793acd11).
