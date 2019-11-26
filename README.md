@@ -4,9 +4,15 @@
 
 # Shiny App to Explore Uber Data (ubeRideR)
 
-This project is an RShiny Web Application that I developed for the RStudio Shiny Contest. The application itself explores my Uber Data. This data was requested from UBER and you can request your data from Uber on the following [link](https://help.uber.com/riders/article/download-your-data?nodeId=2c86900d-8408-4bac-b92a-956d793acd11).
+This project is an RShiny Web Application that I developed for the RStudio Shiny Contest. The application itself explores my Uber Data.
 
 The shinyapp is viewable on [https://vivekkatial.shinyapps.io/uber_shiny/](https://vivekkatial.shinyapps.io/uber_shiny/)
+
+## Data Collection
+
+This data was requested from UBER and you can request your data from Uber on the following [link] (https://help.uber.com/riders/article/download-your-data?nodeId=2c86900d-8408-4bac-b92a-956d793acd11). To produce the trips plot, it was necessary to get the points between that `lat` and `long` of each source and destination coordinates. To do this, I used the Google Maps API to request the lat/long for all the points on the `route`. As such, the plot for each trip is a proxy and not the actual path taken. Currently, this data is not available from UBER. 
+
+Please check the `utils/setup.R` and `utils/get_routes.R` scripts.
 
 ## Technical Information
 
@@ -22,8 +28,7 @@ The app is deployed through RStudio's webservice [shinyapps.io](https://shinyapp
 
 You will also need your own Google API Token and Uber Credentials to collect the data required.
 
-## Upcoming Features
-
+## TODO:
 - Ability for users to add their own data
 - A more functional dashboard with interesting stats
 - Visualisations
